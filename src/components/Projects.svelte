@@ -7,25 +7,32 @@
       href: "projects/DailyStrike",
       title: "DailyStrike",
       body: "A web app for fantasy predictions of competitive Counter Strike matches once a day.",
-      tags: ["Next", "Tailwind", "Vercel"] as availableTags[],
+      tags: [
+        "Next",
+        "Tailwind",
+        "Vercel",
+        "NestJS",
+        "MySQL",
+      ] as availableTags[],
     },
     {
       href: "projects/MyLifeAudit",
       title: "My Life Audit",
       body: "A web application helping users reevaluate their life.",
-      tags: ["SvelteKit", "Tailwind", "Vercel"] as availableTags[],
+      tags: ["SvelteKit", "Tailwind", "Vercel", "MySQL"] as availableTags[],
     },
     {
       href: "projects/Manta",
       title: "Manta",
       body: "Lorem ipsum.",
-      tags: ["Angular", "CSharp"] as availableTags[],
+      tags: ["Angular", "C#", "MSSQL", "IIS"] as availableTags[],
     },
   ];
 </script>
 
 <section class="min-h-screen">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <h2 class="text-4xl text-stone-100">cd .\projects\ && ls</h2>
+  <div class="grid grid-cols-1 gap-y-4">
     {#each projects as project}
       <ProjectCard
         href={project.href}

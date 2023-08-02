@@ -15,7 +15,7 @@
   });
 </script>
 
-<div>
+<div class="md:w-1/2">
   <HeroAttributeOrb color="bg-teal-700" text="Competence" offset={0} {angle} />
   <HeroAttributeOrb color="bg-pink-700" text="Integrity" offset={72} {angle} />
   <HeroAttributeOrb

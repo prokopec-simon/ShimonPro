@@ -1,17 +1,39 @@
 ---
-import HeroAttributes from "../components/HeroAttributes.svelte";
+// import HeroAttributes from "../components/HeroAttributes.svelte";
 import Navbar from "../components/Navbar.svelte";
+import About from "../components/About.svelte";
 import Projects from "../components/Projects.svelte";
 import Services from "../components/Services.svelte";
+import SocialLinks from "../components/SocialLinks.svelte";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Shimon Pro">
   <Navbar client:load />
-  <main class="flex flex-col md:flex-row min-h-screen">
-    <div class="text-4xl">Heyo</div>
-    <HeroAttributes client:load />
-  </main>
-  <Projects />
-  <Services />
+  <header class="w-2/5 md:sticky md:top-0 md:max-h-screen">
+    <div
+      class="flex text-stone-100 flex-col md:h-screen md:justify-between md:py-28"
+    >
+      <div>
+        <span class="font-bold text-4xl inline">Šimon Prokopec</span>
+        <p>I bring profesionality.</p>
+      </div>
+
+      <nav>
+        <ul class="text-lg">
+          <a href="#about"><li>About me</li></a>
+          <a href="#services"><li>Services</li></a>
+          <a href="#projects"><li>Projects</li></a>
+        </ul>
+      </nav>
+      <SocialLinks />
+    </div>
+  </header>
+  <div class="flex-1 flex">
+    <div class="flex-1 md:py-24">
+      <About />
+      <Services />
+      <Projects />
+    </div>
+  </div>
 </Layout>
