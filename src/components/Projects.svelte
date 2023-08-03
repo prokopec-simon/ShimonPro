@@ -31,7 +31,7 @@
   ];
 </script>
 
-<section class="min-h-screen">
+<section class="min-h-screen" id="projects">
   <CommandLineText text="cd .\projects\ && ls" />
   <div class="grid grid-cols-1 gap-y-4">
     {#each projects as project}

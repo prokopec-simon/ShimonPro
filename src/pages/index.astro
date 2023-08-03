@@ -1,5 +1,6 @@
 ---
 import About from "../components/About.svelte";
+import Navigation from "../components/Navigation.svelte";
 import Projects from "../components/Projects.svelte";
 import Services from "../components/Services.svelte";
 import SocialLinks from "../components/SocialLinks.svelte";
@@ -8,33 +9,12 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Shimon Pro">
   <header class="w-2/5 md:sticky md:top-0 md:max-h-screen">
-    <div
-      class="flex flex-col md:h-screen md:justify-between md:py-28"
-    >
+    <div class="flex flex-col md:h-screen md:justify-between md:py-28">
       <div>
         <span class="font-bold text-4xl inline">Šimon Prokopec</span>
         <p>I bring profesionality.</p>
       </div>
-
-      <nav>
-        <ul class="text-lg">
-          <a href="#about"
-            ><li class="hover:text-flax-400 transition delay-50">
-              About me
-            </li></a
-          >
-          <a href="#services"
-            ><li class="hover:text-flax-400 transition delay-50">
-              Services
-            </li></a
-          >
-          <a href="#projects"
-            ><li class="hover:text-flax-400 transition delay-50">
-              Projects
-            </li></a
-          >
-        </ul>
-      </nav>
+      <Navigation client:load />
       <SocialLinks />
     </div>
   </header>

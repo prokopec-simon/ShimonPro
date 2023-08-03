@@ -2,7 +2,7 @@
   import CommandLineText from "./CommandLineText.svelte";
 </script>
 
-<section class="text-lg md:pb-20">
+<section class="text-lg md:pb-20" id="about">
   <CommandLineText text="shimon@127.0.0.1:~$ whoami" />
   <p>
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor

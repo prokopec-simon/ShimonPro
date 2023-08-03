@@ -22,7 +22,7 @@
     <div class="flex gap-3">
       {#each tags as tag}
         <div
-          class="border border-solid border-flax-400 py-1 px-3 rounded-lg text-flax-400"
+          class="border border-solid dark:border-flax-400 py-1 px-3 rounded-lg dark:text-flax-400 text-gray-900 border-gray-900"
         >
           {tag}
         </div>

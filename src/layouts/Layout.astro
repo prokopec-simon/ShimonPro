@@ -35,9 +35,14 @@ window.localStorage.setItem("theme", theme);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <style>
+      html {
+        scroll-behavior: smooth !important;
+      }
+    </style>
   </head>
   <body
-    class="background bg-fixed dark:bg-gray-900 bg-flax-100 text-gray-950 dark:text-stone-200 bg-overlappingCirclesPattern"
+    class="background bg-fixed dark:bg-gray-900 bg-flax-100 text-gray-950 dark:text-stone-200 dark:bg-overlappingCirclesPattern bg-overlappingCirclesLightPattern"
   >
     <Header client:load />
     <main

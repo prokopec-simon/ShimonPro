@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       colors: { flax: { 400: "#F5DD90", 100: "#FDF9EC" } },
       backgroundImage: {
-        overlappingCirclesPattern: "url('/overlapping-circles.svg')",
+        overlappingCirclesPattern: "url('/OverlappingCirclesPattern.svg')",
+        overlappingCirclesLightPattern:
+          "url('/OverlappingCirclesLightPattern.svg')",
       },
     },
     container: {
