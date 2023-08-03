@@ -24,7 +24,7 @@
   });
 </script>
 
-<nav class="flex justify-end p-4">
+<nav class="flex justify-end p-4 fixed top-0 z-10 px-16 w-full">
   <button on:click={handleClick}>
     {#if theme === "light"}
       <Moon />

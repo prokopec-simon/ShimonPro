@@ -1,7 +1,9 @@
-<section class="text-stone-100 text-lg md:pb-20">
-  <h2 class=" text-stone-100 text-opacity-50 text-sm py-1">
-    shimon@127.0.0.1:~$ whoami
-  </h2>
+<script>
+  import CommandLineText from "./CommandLineText.svelte";
+</script>
+
+<section class="text-lg md:pb-20">
+  <CommandLineText text="shimon@127.0.0.1:~$ whoami" />
   <p>
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor
     sit amet, consectetuer adipiscing elit. In convallis. Etiam commodo dui eget

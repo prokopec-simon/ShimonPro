@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { availableTags } from "../models";
+  import CommandLineText from "./CommandLineText.svelte";
   import ProjectCard from "./ProjectCard.svelte";
 
   const projects = [
@@ -31,7 +32,7 @@
 </script>
 
 <section class="min-h-screen">
-  <h2 class="text-4xl text-stone-100">cd .\projects\ && ls</h2>
+  <CommandLineText text="cd .\projects\ && ls" />
   <div class="grid grid-cols-1 gap-y-4">
     {#each projects as project}
       <ProjectCard

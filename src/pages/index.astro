@@ -1,6 +1,4 @@
 ---
-// import HeroAttributes from "../components/HeroAttributes.svelte";
-import Navbar from "../components/Navbar.svelte";
 import About from "../components/About.svelte";
 import Projects from "../components/Projects.svelte";
 import Services from "../components/Services.svelte";
@@ -9,10 +7,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Shimon Pro">
-  <Navbar client:load />
   <header class="w-2/5 md:sticky md:top-0 md:max-h-screen">
     <div
-      class="flex text-stone-100 flex-col md:h-screen md:justify-between md:py-28"
+      class="flex flex-col md:h-screen md:justify-between md:py-28"
     >
       <div>
         <span class="font-bold text-4xl inline">Šimon Prokopec</span>
@@ -21,9 +18,21 @@ import Layout from "../layouts/Layout.astro";
 
       <nav>
         <ul class="text-lg">
-          <a href="#about"><li>About me</li></a>
-          <a href="#services"><li>Services</li></a>
-          <a href="#projects"><li>Projects</li></a>
+          <a href="#about"
+            ><li class="hover:text-flax-400 transition delay-50">
+              About me
+            </li></a
+          >
+          <a href="#services"
+            ><li class="hover:text-flax-400 transition delay-50">
+              Services
+            </li></a
+          >
+          <a href="#projects"
+            ><li class="hover:text-flax-400 transition delay-50">
+              Projects
+            </li></a
+          >
         </ul>
       </nav>
       <SocialLinks />

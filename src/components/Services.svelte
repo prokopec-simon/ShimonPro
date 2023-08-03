@@ -1,1 +1,7 @@
-<section><h2 class="text-4xl text-stone-100">cd .\services\ && ls</h2></section>
+<script>
+  import CommandLineText from "./CommandLineText.svelte";
+</script>
+
+<section>
+  <CommandLineText text="cd .\services\ && ls" />
+</section>

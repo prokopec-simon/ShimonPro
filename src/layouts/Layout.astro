@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.svelte";
+
 interface Props {
   title: string;
 }
@@ -35,8 +37,13 @@ window.localStorage.setItem("theme", theme);
     <title>{title}</title>
   </head>
   <body
-    class="bg-flax-100 dark:bg-gray-900 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-20 md:py-0 flex md:flex-row flex-col"
+    class="background bg-fixed dark:bg-gray-900 bg-flax-100 text-gray-950 dark:text-stone-200 bg-overlappingCirclesPattern"
   >
-    <slot />
+    <Header client:load />
+    <main
+      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-20 md:py-0 flex md:flex-row flex-col"
+    >
+      <slot />
+    </main>
   </body>
 </html>

@@ -2,7 +2,7 @@
   xmlns="http://www.w3.org/2000/svg"
   width="2.5em"
   height="2.5em"
-  class="hover:fill-flax-400 fill-stone-100 transition delay-50"
+  class="hover:fill-flax-400 dark:fill-stone-100 transition delay-50 fill-gray-900"
   viewBox="0 0 24 24"
   {...$$props}
   ><path
