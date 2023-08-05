@@ -33,20 +33,47 @@ window.localStorage.setItem("theme", theme);
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <style>
+    <style is:global>
+      @font-face {
+        font-family: "Quicksand";
+        src: url("/fonts/Quicksand-Medium.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("/fonts/Lato-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
       html {
         scroll-behavior: smooth !important;
       }
     </style>
   </head>
   <body
-    class="background bg-fixed dark:bg-gray-900 bg-flax-100 text-gray-950 dark:text-stone-200 dark:bg-overlappingCirclesPattern bg-overlappingCirclesLightPattern"
+    class="background bg-fixed font-sans dark:bg-gray-900 bg-flax-100 text-gray-950 dark:text-stone-200 dark:bg-overlappingCirclesPattern bg-overlappingCirclesLightPattern"
   >
+    <div
+      class="fixed [writing-mode:vertical-lr] min-h-screen flex justify-center ml-2 text-sm"
+    >
+      <div class="rotate-90">&copy;</div>
+      <div class="text-flax-400 pt-0.5 pb-1.5">2023</div>Šimon Prokopec
+    </div>
     <Header client:load />
     <main
-      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-20 md:py-0 flex md:flex-row flex-col"
+      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-20 md:py-0 flex md:flex-row flex-col"
     >
       <slot />
     </main>

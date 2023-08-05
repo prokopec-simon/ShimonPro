@@ -2,23 +2,27 @@
   import CommandLineText from "./CommandLineText.svelte";
 </script>
 
-<section class="text-lg md:pb-20" id="about">
-  <CommandLineText text="shimon@127.0.0.1:~$ whoami" />
+<section class="text-lg" id="about">
+  <CommandLineText text="whoami" />
+  <button
+    class="-mt-1"
+    on:click={() => (window.location.href = "projects/DailyStrike")}>o</button
+  >
   <p>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit. In convallis. Etiam commodo dui eget
-    wisi. Fusce nibh. Mauris dictum facilisis augue. Pellentesque habitant morbi
-    tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ac
-    leo pretium faucibus. Mauris dolor felis, sagittis at, luctus sed, aliquam
-    non, tellus. In enim a arcu imperdiet malesuada.
+    I’m a pragmatic perfectionist software developer in my twenties. I honestly
+    enjoy the process of converting ideas and thoughts into custom, clean, and
+    effective solutions. One of my biggest strengths is the ability to adapt
+    quickly, whether it’s a specific tech stack, an existing project, or dealing
+    with people. Over the years I have contributed to many OS projects,
+    extending existing tools to match my specific needs, working on projects I
+    enjoy, or fixing issues I come across.
   </p>
   <br />
   <p>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit. In convallis. Etiam commodo dui eget
-    wisi. Fusce nibh. Mauris dictum facilisis augue. Pellentesque habitant morbi
-    tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ac
-    leo pretium faucibus. Mauris dolor felis, sagittis at, luctus sed, aliquam
-    non, tellus. In enim a arcu imperdiet malesuada.
+    These days I focus mostly on modern web applications from start to finish. I
+    can help you with every step from refining ideas, wireframing, and
+    prototyping to deploying a polished and optimized application. On the other
+    hand, I never turn down an interesting backend, machine learning, mobile
+    app, or hardware task.
   </p>
 </section>

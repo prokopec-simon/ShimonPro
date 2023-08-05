@@ -11,18 +11,20 @@ import Layout from "../layouts/Layout.astro";
   <header class="w-2/5 md:sticky md:top-0 md:max-h-screen">
     <div class="flex flex-col md:h-screen md:justify-between md:py-28">
       <div>
-        <span class="font-bold text-4xl inline">Šimon Prokopec</span>
-        <p>I bring profesionality.</p>
+        <span class="font-semibold text-5xl inline font-heading"
+          >Šimon Prokopec</span
+        >
+        <p class="w-4/5 pt-3 text-lg">
+          I bring profesionality and enthusiasm. Let's build something together.
+        </p>
       </div>
       <Navigation client:load />
       <SocialLinks />
     </div>
   </header>
-  <div class="flex-1 flex">
-    <div class="flex-1 md:py-24">
-      <About />
-      <Services />
-      <Projects />
-    </div>
+  <div class="flex flex-col md:w-3/5 gap-24 py-24">
+    <About />
+    <Services />
+    <Projects client:load />
   </div>
 </Layout>

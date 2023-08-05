@@ -19,6 +19,7 @@
     {
       href: "projects/MyLifeAudit",
       title: "My Life Audit",
+      repositoryHref: "",
       body: "A web application helping users reevaluate their life.",
       tags: ["SvelteKit", "Tailwind", "Vercel", "MySQL"] as availableTags[],
     },
@@ -33,9 +34,10 @@
 
 <section class="min-h-screen" id="projects">
   <CommandLineText text="cd .\projects\ && ls" />
-  <div class="grid grid-cols-1 gap-y-4">
+  <div class="grid grid-cols-1 gap-y-4 pt-1">
     {#each projects as project}
       <ProjectCard
+        repositoryHref={project.repositoryHref}
         href={project.href}
         body={project.body}
         title={project.title}
