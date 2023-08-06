@@ -4,10 +4,6 @@
 
 <section class="text-lg" id="about">
   <CommandLineText text="whoami" />
-  <button
-    class="-mt-1"
-    on:click={() => (window.location.href = "projects/DailyStrike")}>o</button
-  >
   <p>
     I’m a pragmatic perfectionist software developer in my twenties. I honestly
     enjoy the process of converting ideas and thoughts into custom, clean, and
