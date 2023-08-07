@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { availableTags } from "../models";
-  // import Github from "./icons/Github.svelte";
+  import Github from "./icons/Github.svelte";
 
   export let href: string;
   export let title: string;
@@ -25,7 +25,7 @@
             class="-mt-1"
             on:click={() => (window.location.href = repositoryHref ?? "")}
           >
-            <!-- <Github /> -->
+            <Github />
           </button>
         {/if}
       </div>
