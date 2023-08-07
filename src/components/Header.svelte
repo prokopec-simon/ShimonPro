@@ -24,7 +24,9 @@
   });
 </script>
 
-<nav class="flex justify-end p-4 fixed top-0 z-10 px-16 w-full">
+<nav
+  class="flex justify-end p-4 fixed top-0 z-10 md:px-16 px-4 w-full md:bg-transparent bg-gray-900"
+>
   <button on:click={handleClick} id="theme-switch" aria-label="Theme switch">
     {#if theme === "light"}
       <Moon />

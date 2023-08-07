@@ -24,7 +24,7 @@
 <section id="services">
   <CommandLineText text="systemctl --type=service" />
   <h3>I can help you with</h3>
-  <div class="grid grid-cols-4 gap-2">
+  <div class="grid md:grid-cols-4 gap-4 grid-cols-2">
     {#each services as service}
       <ServiceCard title={service.title} icon={service.icon} />
     {/each}
@@ -32,7 +32,7 @@
   </div>
   <h3>I can't really help you with</h3>
   <div class="grid">
-    <div class="grid grid-cols-4 gap-2 justify-center">
+    <div class="grid md:grid-cols-4 grid-cols-2 md:gap-3 gap-4 justify-center">
       {#each unavailableServices as service}
         <ServiceCard title={service.title} icon={service.icon} />
       {/each}

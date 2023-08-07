@@ -57,17 +57,19 @@ window.localStorage.setItem("theme", theme);
     </style>
   </head>
   <body
-    class="background bg-fixed font-sans dark:bg-gray-900 bg-flax-100 text-gray-950 dark:text-stone-200 dark:bg-overlappingCirclesPattern bg-overlappingCirclesLightPattern"
+    class="flex background flex-col-reverse md:flex-col bg-fixed font-sans dark:bg-gray-900 bg-flax-100 text-gray-950 dark:text-stone-200 dark:bg-overlappingCirclesPattern bg-overlappingCirclesLightPattern"
   >
     <div
-      class="fixed [writing-mode:vertical-lr] min-h-screen flex justify-center ml-2 text-sm"
+      class="md:fixed md:[writing-mode:vertical-lr] justify-center md:min-h-screen flex md:justify-center md:ml-2 text-sm gap-1 md:gap-0"
     >
       <div class="rotate-90">&copy;</div>
-      <div class="text-flax-400 pt-0.5 pb-1.5">2023</div>Šimon Prokopec
+      <div class="text-flax-400 md:pt-0.5 md:pb-1.5">2023</div>
+      <div class="md:pt-0.5 md:pb-1.5">Šimon Prokopec</div>
     </div>
     <Header client:load />
+    <div></div>
     <main
-      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-20 md:py-0 flex md:flex-row flex-col"
+      class="md:mx-auto md:min-h-screen px-10 py-12 md:px-40 md:py-0 flex md:flex-row flex-col min-w-full"
     >
       <slot />
     </main>

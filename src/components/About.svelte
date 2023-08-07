@@ -2,7 +2,7 @@
   import CommandLineText from "./CommandLineText.svelte";
 </script>
 
-<section class="text-lg" id="about">
+<section class="md:text-lg" id="about">
   <CommandLineText text="whoami" />
   <p>
     I’m a pragmatic perfectionist software developer in my twenties. I honestly

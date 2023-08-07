@@ -4,7 +4,7 @@
   import Github from "./Icons/Github.svelte";
 </script>
 
-<div class="flex gap-2">
+<div class="flex gap-2 md:pt-0 py-16">
   <a
     href="https://github.com/prokopec-simon"
     target="_blank"

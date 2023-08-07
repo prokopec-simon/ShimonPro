@@ -24,7 +24,7 @@
   });
 </script>
 
-<nav class="text-lg flex flex-col">
+<nav class="text-lg flex flex-col md:pt-0 pt-16">
   <div class="flex flex-row items-center">
     <div
       class={`w-2.5 h-2.5 rounded-full ${

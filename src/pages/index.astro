@@ -8,13 +8,13 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Shimon Pro">
-  <header class="w-2/5 md:sticky md:top-0 md:max-h-screen">
+  <header class="md:w-2/5 md:sticky md:top-0 md:max-h-screen">
     <div class="flex flex-col md:h-screen md:justify-between md:py-28">
       <div>
-        <span class="font-semibold text-5xl inline font-heading"
+        <span class="font-semibold md:text-5xl text-3xl inline font-heading"
           >Šimon Prokopec</span
         >
-        <p class="w-4/5 pt-3 text-lg">
+        <p class="md:w-4/5 pt-3 text-lg">
           I bring profesionality and enthusiasm. Let's build something together.
         </p>
       </div>
@@ -22,7 +22,7 @@ import Layout from "../layouts/Layout.astro";
       <SocialLinks />
     </div>
   </header>
-  <div class="flex flex-col md:w-3/5 gap-24 py-24">
+  <div class="flex flex-col md:w-3/5 gap-24 md:py-24">
     <About />
     <Services />
     <Projects client:load />

@@ -32,12 +32,11 @@
   ];
 </script>
 
-<section class="min-h-screen" id="projects">
+<section id="projects">
   <CommandLineText text="cd .\projects\ && ls" />
   <div class="grid grid-cols-1 gap-y-4 pt-1">
     {#each projects as project}
       <ProjectCard
-        repositoryHref={project.repositoryHref}
         href={project.href}
         body={project.body}
         title={project.title}
