@@ -1,11 +1,11 @@
 <script lang="ts">
   import type { availableTags } from "../models";
-  import Github from "./Icons/Github.svelte";
+  // import Github from "./Icons/Github.svelte";
 
   export let href: string;
   export let title: string;
   export let body: string;
-  export let repositoryHref: string | undefined = undefined;
+  // export let repositoryHref: string | undefined = undefined;
   export let tags: availableTags[];
 </script>
 
@@ -15,19 +15,19 @@
   >
     <div class="p-5">
       <div class="flex flex-row mb-2 justify-between">
-        <h5
+        <h1
           class="text-2xl font-bold text-gray-900 dark:text-white font-heading group-hover:dark:text-flax-400"
         >
           {title}
-        </h5>
-        {#if repositoryHref != undefined}
+        </h1>
+        <!-- {#if repositoryHref != undefined}
           <button
             class="-mt-1"
             on:click={() => (window.location.href = repositoryHref ?? "")}
           >
             <Github />
           </button>
-        {/if}
+        {/if} -->
       </div>
 
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
