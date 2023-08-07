@@ -14,6 +14,7 @@
 
   export let title: string;
   export let icon: keyof typeof availableIcons;
+  export let href: string;
 
   const availableIcons = {
     palette: Palette,
@@ -31,9 +32,11 @@
   };
 </script>
 
-<div
-  class="bg-white border border-gray-200 rounded-lg transition dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-40 hover:dark:bg-opacity-70 group hover:dark:border-flax-400 flex flex-col justify-center items-center"
->
-  <svelte:component this={availableIcons[icon]} />
-  {title}
-</div>
+<a href="home">
+  <div
+    class=" bg-white border border-gray-200 rounded-lg transition dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-40 hover:dark:bg-opacity-70 group hover:dark:border-flax-400 flex flex-col justify-center items-center py-6 h-40"
+  >
+    <svelte:component this={availableIcons[icon]} />
+    <div class="text-center py-2">{title}</div>
+  </div>
+</a>

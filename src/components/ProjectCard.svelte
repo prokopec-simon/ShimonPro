@@ -36,7 +36,7 @@
       <div class="flex gap-3">
         {#each tags as tag}
           <div
-            class="border border-solid dark:border-flax-400 py-1 px-3 rounded-lg dark:text-flax-400 text-gray-900 border-gray-900"
+            class="border border-solid dark:border-flax-400 py-1 px-3 rounded-lg dark:text-flax-100 text-gray-900 border-gray-900 text-sm"
           >
             {tag}
           </div>
