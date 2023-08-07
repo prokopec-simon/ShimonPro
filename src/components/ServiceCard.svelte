@@ -35,7 +35,7 @@
 {#if href != undefined}
   <a href={"services/" + href}>
     <div
-      class=" bg-white border border-gray-200 rounded-lg transition dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-40 hover:dark:bg-opacity-70 group hover:dark:border-flax-400 flex flex-col justify-end items-center md:py-3 py-2 px-4 md:h-40 h-32"
+      class=" bg-white border border-gray-200 rounded-lg transition dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-40 hover:dark:bg-opacity-70 hover:dark:text-flax-400 group hover:dark:border-flax-400 flex flex-col justify-end items-center md:py-3 py-2 px-4 md:h-40 h-32"
     >
       <svelte:component this={availableIcons[icon]} />
       <div class="text-center py-2 break-words">{title}</div>
@@ -43,7 +43,7 @@
   </a>
 {:else}
   <div
-    class=" bg-white border border-gray-200 rounded-lg transition dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-40 flex flex-col justify-end items-center md:py-3 py-2 px-4 md:h-40 h-32"
+    class=" bg-white border border-gray-200 dark:text-gray-600 rounded-lg transition dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-40 flex flex-col justify-end items-center md:py-3 py-2 px-4 md:h-40 h-32"
   >
     <svelte:component this={availableIcons[icon]} />
     <div class="text-center py-2 break-words">{title}</div>
