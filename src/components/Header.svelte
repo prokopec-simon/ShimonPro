@@ -25,7 +25,7 @@
 </script>
 
 <nav
-  class="flex justify-end p-4 fixed top-0 z-10 md:px-16 px-4 w-full md:bg-transparent bg-gray-900"
+  class="flex justify-end p-4 fixed top-0 z-10 md:px-16 px-4 w-full md:bg-transparent dark:bg-overlappingCirclesPattern bg-overlappingCirclesLightPattern bg-fixed bg-gray-900"
 >
   <button on:click={handleClick} id="theme-switch" aria-label="Theme switch">
     {#if theme === "light"}
