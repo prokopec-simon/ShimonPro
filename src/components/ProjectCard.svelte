@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { availableTags } from "../models";
-  import Github from "./icons/Github.svelte";
+  import Github from "./Icons/Github.svelte";
 
   export let href: string;
   export let title: string;

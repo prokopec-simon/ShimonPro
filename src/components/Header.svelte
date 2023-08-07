@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
-  import Moon from "./icons/Moon.svelte";
-  import Sun from "./icons/Sun.svelte";
+  import Moon from "./Icons/Moon.svelte";
+  import Sun from "./Icons/Sun.svelte";
 
   let theme = localStorage.getItem("theme") || "light";
 

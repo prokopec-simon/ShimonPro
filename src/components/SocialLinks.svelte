@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Discord from "./icons/Discord.svelte";
-  import Email from "./icons/Email.svelte";
-  import Github from "./icons/Github.svelte";
+  import Discord from "./Icons/Discord.svelte";
+  import Email from "./Icons/Email.svelte";
+  import Github from "./Icons/Github.svelte";
 </script>
 
 <div class="flex gap-2">
