@@ -23,7 +23,11 @@
 
 <section id="services">
   <CommandLineText text="systemctl --type=service" />
-  <h3>I can help you with</h3>
+  <h3 class="py-2">
+    These are services I feel comfortable offering on a high level and
+    professional efficiency. I can provide detailed proof of expertise for each
+    of the categories.
+  </h3>
   <div class="grid md:grid-cols-4 gap-4 grid-cols-2">
     {#each services as service}
       <ServiceCard
@@ -34,7 +38,10 @@
     {/each}
     <div />
   </div>
-  <h3>I can't really help you with</h3>
+  <h3 class="py-2 pt-9">
+    Currently not interested in projects solely focusing on these services.
+    Either because of inexperience or uninterested.
+  </h3>
   <div class="grid">
     <div class="grid md:grid-cols-4 grid-cols-2 md:gap-3 gap-4 justify-center">
       {#each unavailableServices as service}

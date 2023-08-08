@@ -7,7 +7,7 @@
     {
       href: "projects/DailyStrike",
       title: "DailyStrike",
-      body: "A web app for fantasy predictions of competitive Counter Strike matches once a day.",
+      body: "A web app for fantasy predictions of competitive Counter Strike matches once a day, letting players take place in seasonal ladder and win prizes.",
       tags: [
         "Next",
         "Tailwind",
@@ -20,13 +20,13 @@
       href: "projects/MyLifeAudit",
       title: "My Life Audit",
       repositoryHref: "",
-      body: "A web application helping users reevaluate their life.",
+      body: "Project website and custom PWA application helping users reevaluate their life and improve the quality of their lives.",
       tags: ["SvelteKit", "Tailwind", "Vercel", "MySQL"] as availableTags[],
     },
     {
       href: "projects/Manta",
       title: "Manta",
-      body: "Lorem ipsum.",
+      body: "Large scale web application and REST API for commercial mobile application used by manufacturing companies.",
       tags: ["Angular", "C#", "MSSQL", "IIS"] as availableTags[],
     },
   ];
