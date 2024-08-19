@@ -43,6 +43,7 @@
   <div class="grid grid-cols-1 gap-y-4 pt-1">
     {#each projects as project}
       <ProjectCard
+        imageUrl="https://via.placeholder.com/150"
         href={project.href}
         body={project.body}
         title={project.title}
