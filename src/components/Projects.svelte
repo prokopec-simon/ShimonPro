@@ -5,6 +5,12 @@
 
   const projects = [
     {
+      href: "projects/FluxBoard",
+      title: "FluxBoard",
+      body: "A compact web application for Kanban project management.",
+      tags: ["Angular", "C#", "MSSQL", "IIS"] as availableTags[],
+    },
+    {
       href: "projects/DailyStrike",
       title: "DailyStrike",
       body: "A web app for fantasy predictions of competitive Counter Strike matches once a day, letting players take place in seasonal ladder and win prizes.",
@@ -17,11 +23,11 @@
       ] as availableTags[],
     },
     {
-      href: "projects/MyLifeAudit",
-      title: "My Life Audit",
+      href: "projects/Goldbrew",
+      title: "Simplex solver & Goldbrew",
       repositoryHref: "",
-      body: "Project website and custom PWA application helping users reevaluate their life and improve the quality of their lives.",
-      tags: ["SvelteKit", "Tailwind", "Vercel", "MySQL"] as availableTags[],
+      body: "A Lua library for solving optimization tasks using simplex method. A World Of Warcraft addon using this library to maximize in-game profits.",
+      tags: ["Lua"] as availableTags[],
     },
     {
       href: "projects/Manta",

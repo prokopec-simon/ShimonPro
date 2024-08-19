@@ -1,6 +1,7 @@
 export type availableTags =
   | "Tailwind"
   | "Angular"
+  | "Lua"
   | "SvelteKit"
   | "Next"
   | "Vercel"
